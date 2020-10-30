@@ -1,0 +1,3 @@
+.faunarc
+node_modules/
+.env

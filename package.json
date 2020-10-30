@@ -1,0 +1,25 @@
+{
+  "name": "fauna",
+  "version": "1.0.0",
+  "description": "Testing out FaunaDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mars2020/faunadb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mars2020/faunadb/issues"
+  },
+  "homepage": "https://github.com/mars2020/faunadb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faunadb": "^3.0.1"
+  }
+}
