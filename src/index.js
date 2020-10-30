@@ -1,11 +1,14 @@
+require('dotenv').config();
 const express = require('express');
-const faunadb = require('faunadb');
-
+const bodyParser = require('body-parser')
 
 const app = express();
 
-const client = faunadb.Client({'secret':process.env.FAUNA_KEY});
+const routes = require('./routes');
 
-const port = process.env.PORT || 5000
+app.use(bodyParser.json());
+app.use('/',routes);
 
-app.listen(port, console.log(`App running on port: ${port}`));
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => console.log(`App running on port: ${port}`));
